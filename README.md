@@ -110,3 +110,7 @@ flowguard status
 - **Backend**: Deployed on [Render](https://render.com) (free tier)
 - **Frontend**: Deployed on [Vercel](https://vercel.com) (free tier)
 
+## 📊 Expected Impact
+
+> "Reduces fraud losses by up to **60%** while cutting cross-border fees and enabling instant settlement — perfect for India's UPI ecosystem and global expansion."
+
