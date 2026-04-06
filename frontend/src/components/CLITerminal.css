@@ -1,0 +1,139 @@
+.cli-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.cli-header h1 { font-size: 1.75rem; margin-bottom: var(--space-1); }
+
+/* Terminal Window */
+.terminal-window {
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green { background: #28c840; }
+
+.terminal-title {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+.terminal-body {
+  padding: var(--space-4);
+  min-height: 500px;
+  max-height: 600px;
+  overflow-y: auto;
+  background: #0d1117;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  cursor: text;
+}
+
+.terminal-line pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+.terminal-line.system pre { color: var(--text-tertiary); }
+.terminal-line.input pre { color: var(--primary-400); }
+.terminal-line.result pre { color: var(--text-primary); }
+.terminal-line.error pre { color: var(--danger); }
+.terminal-line.processing pre { color: var(--accent-400); }
+.terminal-line.ai pre { color: var(--primary-300); font-style: italic; }
+.terminal-line.help pre { color: var(--text-secondary); }
+
+/* Input Line */
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.prompt {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.prompt-user { color: var(--success); font-weight: 600; }
+.prompt-at { color: var(--text-tertiary); }
+.prompt-host { color: var(--accent-400); font-weight: 600; }
+.prompt-sep { color: var(--text-tertiary); }
+.prompt-dir { color: var(--primary-400); }
+.prompt-dollar { color: var(--text-primary); margin-left: var(--space-1); margin-right: var(--space-2); }
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  outline: none;
+  caret-color: var(--primary-400);
+}
+
+.terminal-input::placeholder {
+  color: var(--text-tertiary);
+  opacity: 0.5;
+}
+
+/* Quick Commands */
+.cli-quickcmds {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.quick-label {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin-right: var(--space-2);
+}
+
+.quick-cmd {
+  padding: 4px 12px;
+  background: var(--surface-glass);
+  border: 1px solid var(--surface-glass-border);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.quick-cmd:hover {
+  background: var(--surface-glass-hover);
+  color: var(--primary-400);
+  border-color: rgba(245, 158, 11, 0.3);
+}
