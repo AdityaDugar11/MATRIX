@@ -120,3 +120,8 @@ Built with ❤️ by **Aditya Dugar** for DevCraft Hackathon (SimonSays)
 
 ---
 
+<div align="center">
+
+🛡️ **FlowGuard AI** — *Securing every transaction, one decision at a time.*
+
+</div>
