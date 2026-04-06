@@ -86,3 +86,12 @@ python main.py
 # API runs at http://localhost:8000
 ```
 
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+# Dashboard at http://localhost:5173
+```
+
