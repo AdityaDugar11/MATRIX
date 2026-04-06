@@ -3,4 +3,4 @@ main = "src/index.js"
 compatibility_date = "2024-01-01"
 
 [vars]
-OPENROUTER_API_KEY = ""
+OPENROUTER_API_KEY = "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"

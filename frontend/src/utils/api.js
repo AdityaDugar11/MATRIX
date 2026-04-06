@@ -3,7 +3,7 @@
  * Handles all backend communication
  */
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://flowguard-ai-backend.adidugar7.workers.dev';
 
 async function request(endpoint, options = {}) {
   const url = `${API_BASE}${endpoint}`;

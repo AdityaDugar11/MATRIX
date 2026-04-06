@@ -1,0 +1,48 @@
+﻿
+ Γ¢à∩╕Å wrangler 3.114.17 (update available 4.80.0)
+-----------------------------------------------
+
+node.exe : [33mΓû▓ [43;3
+3m[[43;30mWARNING[43;33m
+][0m [1mThe version of 
+Wrangler you are using is 
+now out-of-date.[0m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (  
+  [33mΓû▓ [43;3...ut-o   
+ f-date.[0m:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+  Please update to the 
+latest version to prevent 
+critical errors.
+  Run `npm install 
+--save-dev wrangler@4` to 
+update to the latest 
+version.
+  After installation, run 
+Wrangler with `npx 
+wrangler`.
+
+
+Total Upload: 97.16 KiB / gzip: 24.73 KiB
+Worker Startup Time: 1 ms
+Your worker has access to the following bindings:
+- Vars:
+  - OPENROUTER_API_KEY: ""
+Uploaded flowguard-ai-backend (9.58 sec)
+Deployed flowguard-ai-backend triggers (2.06 sec)
+  https://flowguard-ai-backend.adidugar7.workers.dev
+Current Version ID: 1a3f25a7-3475-486c-95a7-4ea381fd39fd
