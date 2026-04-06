@@ -105,3 +105,8 @@ flowguard balance
 flowguard status
 ```
 
+## 🌐 Deployment
+
+- **Backend**: Deployed on [Render](https://render.com) (free tier)
+- **Frontend**: Deployed on [Vercel](https://vercel.com) (free tier)
+
