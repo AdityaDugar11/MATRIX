@@ -8,7 +8,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
-      - key: OPENROUTER_API_KEY
+      - key: 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
         sync: false
       - key: PYTHON_VERSION
         value: 3.11.0
