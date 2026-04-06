@@ -95,3 +95,13 @@ npm run dev
 # Dashboard at http://localhost:5173
 ```
 
+### CLI Commands
+
+```bash
+flowguard send 5000 --to upi:rahul@okaxis --currency INR
+flowguard analyze --txid TXN-A1B2C3D4
+flowguard optimize --amount 10000 --to international
+flowguard balance
+flowguard status
+```
+
