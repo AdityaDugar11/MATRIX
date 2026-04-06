@@ -11,3 +11,8 @@ env/
 .env.local
 .env.production
 
+# Build
+dist/
+build/
+*.egg-info/
+
