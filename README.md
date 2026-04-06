@@ -30,3 +30,59 @@ A unified platform where an **agentic AI** acts as the intelligent command cente
 4. **Executes** or flags the transaction
 5. **Delivers** personalized financial insights
 
+## 🚀 Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **📊 Dashboard** | Real-time balance, transactions, risk heatmap, agent activity |
+| **💸 Smart Payments** | UPI + Stablecoin + SWIFT with AI routing optimization |
+| **🛡️ Fraud Detection** | ML-powered (Isolation Forest) + rule-based, scores in ~2ms |
+| **🤖 AI Agent** | Autonomous routing decisions with natural language explanations |
+| **💻 CLI Terminal** | Developer-friendly commands (`flowguard send`, `analyze`, etc.) |
+| **📈 Analytics** | Risk heatmaps, distribution charts, spending insights |
+
+## 🏗️ Architecture
+
+```
+┌───────────────────────────────────────────────────┐
+│            React + Vite Frontend (Vercel)          │
+│  Dashboard │ Payments │ Analytics │ CLI Terminal   │
+└────────────────────┬──────────────────────────────┘
+                     │ REST API
+┌────────────────────▼──────────────────────────────┐
+│           FastAPI Backend (Render)                  │
+│  ┌──────────┬──────────┬───────────┬──────────┐   │
+│  │ Payment  │  Fraud   │ AI Agent  │ Route    │   │
+│  │ Engine   │ Detector │(OpenRouter)│ Optimizer│   │
+│  └──────────┴──────────┴───────────┴──────────┘   │
+│            In-Memory Ledger + ML Model             │
+└────────────────────────────────────────────────────┘
+```
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18 + Vite + Vanilla CSS (golden/dark theme)
+- **Backend**: FastAPI (Python) + Uvicorn
+- **AI/LLM**: OpenRouter (Meta LLaMA 3.1 8B — free tier)
+- **Fraud ML**: scikit-learn (Isolation Forest anomaly detection)
+- **Payments**: In-memory ledger with UPI, IMPS, NEFT, SWIFT, Stablecoin simulation
+- **CLI**: Built-in browser terminal + Python `typer` CLI
+
+## 📦 Quick Start
+
+### Backend
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+# Set your OpenRouter API key (free at https://openrouter.ai/keys)
+cp .env.example .env
+# Edit .env and add your OPENROUTER_API_KEY
+
+python main.py
+# API runs at http://localhost:8000
+```
+
